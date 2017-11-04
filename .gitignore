@@ -1,0 +1,7 @@
+*.pdf
+*.xcbkptlist
+
+APIKeys.plist
+
+Pods/
+*/xcuserdata/*
