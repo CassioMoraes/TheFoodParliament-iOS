@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vVv-nv-q1E">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RestaurantViewController-->
+        <scene sceneID="hMS-YU-mop">
+            <objects>
+                <tableViewController storyboardIdentifier="RestaurantViewController" id="pJg-dt-T5d" userLabel="RestaurantViewController" customClass="RestaurantViewController" customModule="TheFoodParlament" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="b49-vl-Ldy" userLabel="RestaurantTableViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="electionStatus" text="Eleição está aberta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Q3Q-nE-7kF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="center" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestaurantTableViewCell" rowHeight="90" id="XrB-7S-5LA" customClass="RestaurantTableViewCell" customModule="TheFoodParlament" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XrB-7S-5LA" id="tr4-PQ-fGe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZt-jn-frY">
+                                            <rect key="frame" x="8" y="8" width="239" height="31"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="239" id="ayO-KR-UcX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Adress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shb-Ia-hV8">
+                                            <rect key="frame" x="8" y="47" width="239" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="dg8-dc-Oln"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Votos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQE-Va-Okc">
+                                            <rect key="frame" x="255" y="8" width="50" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sy-ya-71A">
+                                            <rect key="frame" x="255" y="28" width="50" height="45"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" onImage="checked" offImage="unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="gCU-ds-tig">
+                                            <rect key="frame" x="313" y="28" width="51" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="voteSwitch:" destination="XrB-7S-5LA" eventType="valueChanged" id="g6g-7O-VCH"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Shb-Ia-hV8" secondAttribute="bottom" constant="13.5" id="8jR-rS-FTz"/>
+                                        <constraint firstItem="UZt-jn-frY" firstAttribute="trailing" secondItem="Shb-Ia-hV8" secondAttribute="trailing" id="Cwg-Nf-m0X"/>
+                                        <constraint firstItem="UZt-jn-frY" firstAttribute="leading" secondItem="Shb-Ia-hV8" secondAttribute="leading" id="a8l-5X-7r2"/>
+                                        <constraint firstItem="Shb-Ia-hV8" firstAttribute="top" secondItem="UZt-jn-frY" secondAttribute="bottom" constant="8" symbolic="YES" id="cFp-Ne-blY"/>
+                                        <constraint firstItem="UZt-jn-frY" firstAttribute="leading" secondItem="tr4-PQ-fGe" secondAttribute="leadingMargin" id="edI-H6-WQr"/>
+                                        <constraint firstItem="UZt-jn-frY" firstAttribute="top" secondItem="tr4-PQ-fGe" secondAttribute="topMargin" id="yiA-6q-Pv5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="restaurantAddressLabel" destination="Shb-Ia-hV8" id="XF8-mD-nvL"/>
+                                    <outlet property="restaurantNameLabel" destination="UZt-jn-frY" id="Kew-GB-n2k"/>
+                                    <outlet property="totalDailyVotesLabel" destination="3Sy-ya-71A" id="pVe-Mk-7Wa"/>
+                                    <outlet property="voteSwitch" destination="gCU-ds-tig" id="UBa-3g-DgX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pJg-dt-T5d" id="LhO-1D-hyN"/>
+                            <outlet property="delegate" destination="pJg-dt-T5d" id="6Yq-Wp-dHh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Restaurantes por perto" id="htc-3g-B1F">
+                        <barButtonItem key="rightBarButtonItem" image="Winner" id="4vh-zC-xTx">
+                            <connections>
+                                <segue destination="E8l-Ll-mnf" kind="show" identifier="" id="gwb-It-8Ww"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="WEb-NM-0dT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Recarregar restaurantes...">
+                                <attributes>
+                                    <font key="NSFont" metaFont="smallSystem"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="electionStatusLabel" destination="Q3Q-nE-7kF" id="mSr-JM-Ai0"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f75-zB-Cr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.2" y="144.3778110944528"/>
+        </scene>
+        <!--RestaurantDetailViewController-->
+        <scene sceneID="W7s-pI-6ib">
+            <objects>
+                <viewController storyboardIdentifier="RestaurantDetailViewController" title="Elected Restaurant" id="E8l-Ll-mnf" userLabel="RestaurantDetailViewController" customClass="RestaurantDetailViewController" customModule="TheFoodParlament" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QKv-uD-PDm"/>
+                        <viewControllerLayoutGuide type="bottom" id="i53-6b-Nbj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U2z-Tn-p6I" userLabel="RestaurantDetailViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant adress" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bf-Gc-Aao">
+                                <rect key="frame" x="16" y="100" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT3-hH-xm9">
+                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="RestaurantAdressLabel" destination="6Bf-Gc-Aao" id="FqW-dE-Wh5"/>
+                        <outlet property="RestaurantNameLabel" destination="gT3-hH-xm9" id="WfD-BM-ohu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiA-r9-psa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916" y="143.47826086956522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="67f-aq-4MP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vVv-nv-q1E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="9YA-S8-Fqj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pJg-dt-T5d" kind="relationship" relationship="rootViewController" id="vkI-6F-4Th"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5kW-un-Cxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="144.3778110944528"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Winner" width="32" height="32"/>
+        <image name="checked" width="75" height="75"/>
+        <image name="unchecked" width="75" height="75"/>
+    </resources>
+</document>
